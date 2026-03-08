@@ -1,0 +1,13 @@
+\section{Related Work}
+\label{sec:related_work}
+\para{Numeracy in language representations.}
+Early probing work shows that standard embeddings often encode numbers weakly outside seen ranges, with large extrapolation gaps \citep{wallace2019nlp}. Follow-up approaches inject numeric skills with synthetic data or numeral-aware objectives, yielding stronger numerical reasoning in downstream tasks \citep{geva2020injecting,jin2021numgpt}. Our work differs in scope: we do not train or adapt models; we isolate French numeral behavior through controlled black-box probes.
+
+\para{Multilingual mathematical reasoning.}
+MGSM established that chain-of-thought prompting can improve multilingual grade-school math, including French \citep{shi2022language}. Subsequent multilingual math instruction work reports additional gains from cross-lingual training data \citep{chen2024breaking}. These studies evaluate broad reasoning, while we focus on a narrower linguistic bottleneck: mapping French numeral strings with explicit banded analysis.
+
+\para{Tokenization and language-specific structure.}
+French tokenization design materially changes downstream behavior in domain models \citep{labrak2024tokenization}. This aligns with our motivation to inspect French numeral morphology directly rather than rely only on aggregate benchmark scores.
+
+\para{Mechanistic views of arithmetic.}
+Recent analyses identify arithmetic-sensitive heads/neurons and argue that structural priors support generalization \citep{yu2024interpreting,chang2024unraveling}. We complement this line by delivering a task suite that can be used as a front-end diagnostic before token-level or activation-level mechanistic tracing.

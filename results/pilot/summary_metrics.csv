@@ -1,0 +1,5 @@
+model,condition,task,band,accuracy,accuracy_std,n,num_correct
+gpt-4.1,direct,digit_to_word,0-69,0.9666666666666667,0.18257418583505536,30,29
+gpt-4.1,reasoned,digit_to_word,0-69,0.9666666666666667,0.18257418583505536,30,29
+gpt-4.1-mini,direct,digit_to_word,0-69,0.9666666666666667,0.18257418583505536,30,29
+gpt-4.1-mini,reasoned,digit_to_word,0-69,0.9666666666666667,0.18257418583505536,30,29

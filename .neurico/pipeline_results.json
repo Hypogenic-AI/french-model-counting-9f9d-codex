@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/french-model-counting-9f9d-codex/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/french-model-counting-9f9d-codex/literature_review.md",
+        "resources_catalog": "/workspaces/french-model-counting-9f9d-codex/resources.md",
+        "papers_dir": "/workspaces/french-model-counting-9f9d-codex/papers",
+        "datasets_dir": "/workspaces/french-model-counting-9f9d-codex/datasets",
+        "code_dir": "/workspaces/french-model-counting-9f9d-codex/code"
+      },
+      "log_file": "/workspaces/french-model-counting-9f9d-codex/logs/resource_finder_codex.log",
+      "transcript_file": "/workspaces/french-model-counting-9f9d-codex/logs/resource_finder_codex_transcript.jsonl",
+      "elapsed_time": 442.65998220443726
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 1991.0862333774567,
+      "log_file": "/workspaces/french-model-counting-9f9d-codex/logs/execution_codex.log",
+      "transcript_file": "/workspaces/french-model-counting-9f9d-codex/logs/execution_codex_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/french-model-counting-9f9d-codex"
+}

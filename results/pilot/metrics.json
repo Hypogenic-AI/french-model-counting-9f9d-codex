@@ -1,0 +1,18 @@
+{
+  "input_csv": "results/raw/raw_outputs_20260308_213927.csv",
+  "summary_csv": "results/pilot/summary_metrics.csv",
+  "tests_csv": "results/pilot/band_significance_tests.csv",
+  "plots": [
+    "results/pilot/accuracy_by_band.png",
+    "results/pilot/condition_effect_core_tasks.png",
+    "results/pilot/per_number_accuracy_digit_to_word.png"
+  ],
+  "logistic_regression": {
+    "n": 120,
+    "formula": "correct ~ irregular + C(model) + C(condition) + C(task) [regularized]",
+    "error": "Singular matrix"
+  },
+  "overall_accuracy": 0.9666666666666667,
+  "total_rows": 120,
+  "rows_with_errors": 0
+}

@@ -1,0 +1,43 @@
+{
+  "mgsm_examples": [
+    {
+      "question": "Les canes de Janet pondent 16 œufs par jour. Chaque matin, elle en mange trois au petit déjeuner et en utilise quatre autres pour préparer des muffins pour ses amis. Ce qui reste, elle le vend quotidiennement au marché fermier, au prix de 2 $ l'œuf de cane frais. Combien (en dollars) gagne-t-elle chaque jour au marché fermier ?",
+      "answer": 18.0
+    },
+    {
+      "question": "Une robe nécessite 2 rouleaux de fibre bleue et la moitié de cette quantité en fibre blanche. Combien faut-il de rouleaux au total ?",
+      "answer": 3.0
+    },
+    {
+      "question": "Josh se lance dans la rénovation d'une maison. Il en achète une au prix de 80 000 $ et investit 50 000 $ dans sa restauration. La valeur de la maison augmente alors de 150 %. Quel bénéfice a-t-il réalisé ?",
+      "answer": 70000.0
+    }
+  ],
+  "synth_examples": [
+    {
+      "number": 0,
+      "french": "zero",
+      "band": "0-69"
+    },
+    {
+      "number": 71,
+      "french": "soixante et onze",
+      "band": "70-99"
+    },
+    {
+      "number": 95,
+      "french": "quatre-vingt-quinze",
+      "band": "70-99"
+    },
+    {
+      "number": 100,
+      "french": "cent",
+      "band": "100-199"
+    },
+    {
+      "number": 199,
+      "french": "cent quatre-vingt-dix-neuf",
+      "band": "100-199"
+    }
+  ]
+}

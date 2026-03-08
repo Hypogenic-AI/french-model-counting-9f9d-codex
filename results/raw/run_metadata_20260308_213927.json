@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "models": [
+    "gpt-4.1",
+    "gpt-4.1-mini"
+  ],
+  "conditions": [
+    "direct",
+    "reasoned"
+  ],
+  "mgsm_limit": 10,
+  "num_items_per_combo": 30,
+  "total_calls_attempted": 120,
+  "jsonl_path": "results/raw/raw_outputs_20260308_213927.jsonl",
+  "csv_path": "results/raw/raw_outputs_20260308_213927.csv",
+  "created_utc": "2026-03-08T21:40:49.591751+00:00"
+}

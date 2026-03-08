@@ -1,0 +1,61 @@
+{
+  "input_csv": "results/raw/raw_outputs_20260308_214204_partial.csv",
+  "summary_csv": "results/summary_metrics.csv",
+  "tests_csv": "results/band_significance_tests.csv",
+  "plots": [
+    "results/accuracy_by_band.png",
+    "results/condition_effect_core_tasks.png",
+    "results/per_number_accuracy_digit_to_word.png"
+  ],
+  "logistic_regression": {
+    "n": 1775,
+    "formula": "correct ~ irregular + C(model) + C(condition) + C(task)",
+    "params": {
+      "Intercept": 4.959946419105373,
+      "C(model)[T.gpt-4.1-mini]": -0.8086079276548084,
+      "C(condition)[T.reasoned]": 0.045717742863133085,
+      "C(task)[T.pattern_classification]": -4.665970217642139,
+      "C(task)[T.word_to_digit]": 22.87830381193204,
+      "irregular": 2.8763171469572266
+    },
+    "conf_int": {
+      "Intercept": {
+        "low": 4.0323841488358205,
+        "high": 5.8875086893749256
+      },
+      "C(model)[T.gpt-4.1-mini]": {
+        "low": -1.242810944922228,
+        "high": -0.37440491038738877
+      },
+      "C(condition)[T.reasoned]": {
+        "low": -0.37337643492034644,
+        "high": 0.4648119206466126
+      },
+      "C(task)[T.pattern_classification]": {
+        "low": -5.570162257335618,
+        "high": -3.761778177948659
+      },
+      "C(task)[T.word_to_digit]": {
+        "low": -80932.96931195082,
+        "high": 80978.72591957467
+      },
+      "irregular": {
+        "low": 1.9493868815843118,
+        "high": 3.8032474123301414
+      }
+    },
+    "p_values": {
+      "Intercept": 1.061809099723387e-25,
+      "C(model)[T.gpt-4.1-mini]": 0.00026223701051563894,
+      "C(condition)[T.reasoned]": 0.8306978253717896,
+      "C(task)[T.pattern_classification]": 4.781511605118078e-24,
+      "C(task)[T.word_to_digit]": 0.9995580595750463,
+      "irregular": 1.1878195779340072e-09
+    },
+    "pseudo_r2": 0.4737621602685608,
+    "aic": 759.8826526650699
+  },
+  "overall_accuracy": 0.8351421188630491,
+  "total_rows": 1935,
+  "rows_with_errors": 0
+}

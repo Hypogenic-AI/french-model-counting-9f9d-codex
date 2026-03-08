@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Model & Task & Risk diff. & $p$ & FDR sig. \\
+\midrule
+\gptfourone (direct) & \digitword & +0.0059 & 0.6737 & No \\
+\gptfouronemini (direct) & \digitword & -0.0216 & 0.3702 & No \\
+\gptfourone (direct) & \patterncls & +0.4353 & 5.29e-06 & Yes \\
+\gptfourone (reasoned) & \patterncls & +0.4235 & 8.36e-06 & Yes \\
+\gptfouronemini (direct) & \patterncls & +0.4805 & 1.58e-06 & Yes \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Irregular-vs-regular band tests. Positive risk difference indicates higher accuracy on \irregularband.}
+\label{tab:significance_summary}
+\end{table}

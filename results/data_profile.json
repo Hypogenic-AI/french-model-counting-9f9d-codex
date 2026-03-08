@@ -1,0 +1,15 @@
+{
+  "mgsm_fr_rows": 250,
+  "mgsm_missing_question_pct": 0.0,
+  "mgsm_missing_answer_pct": 1.6,
+  "mgsm_duplicate_questions": 0,
+  "mgsm_answer_min": 1.0,
+  "mgsm_answer_max": 95200.0,
+  "synth_rows": 200,
+  "synth_band_counts": {
+    "100-199": 100,
+    "0-69": 70,
+    "70-99": 30
+  },
+  "synth_duplicate_forms": 0
+}

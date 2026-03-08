@@ -1,0 +1,13 @@
+\section{Discussion}
+\label{sec:discussion}
+\para{What do these results imply?}
+The main empirical point is separation between capabilities. French numeral transduction appears robust for current strong API models under deterministic prompts, but probe framing can create large apparent band effects. Our \patterncls results should therefore be interpreted as evidence about label-space interactions, not as direct proof of weaker French numeral representation.
+
+\para{Why does \patterncls favor irregular items?}
+Our label schema likely makes irregular constructions more discriminative, which increases separability. This is useful diagnostically, but it can overstate ``difficulty'' claims if used in isolation. The contrast with near-perfect \digitword and \worddigit performance supports this interpretation.
+
+\para{Limitations.}
+One model-condition block (\gptfouronemini reasoned) is incomplete because of runtime interruption, so the factorial design is not fully balanced. We also do not include token-level log-probabilities or activation-level analysis, which limits mechanistic conclusions. Finally, our canonicalization remains conservative and may still mark legitimate French orthographic variants as errors in strict mode.
+
+\para{Broader implications.}
+For deployment, the positive result is practical reliability in low-temperature numeral mapping. For evaluation design, the caution is equally important: benchmark conclusions about language-specific structure can be probe-sensitive. Future multilingual numeracy benchmarks should separate formatting sensitivity from true semantic errors and report both strict and normalized metrics.

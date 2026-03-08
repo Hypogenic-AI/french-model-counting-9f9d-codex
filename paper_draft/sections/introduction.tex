@@ -1,0 +1,17 @@
+\section{Introduction}
+\label{sec:introduction}
+French counting is a clean stress test for multilingual numeracy: it is rule-based, but its lexical surface is atypical in the \irregularband range. Errors in numeric language matter in tutoring, translation, and safety-critical communication. Our main question is simple: do strong LLMs degrade on French irregular forms, or can they map these forms consistently?
+
+Prior numeracy studies establish that tokenization, representation choice, and synthetic pretraining all affect number handling \citep{wallace2019nlp,geva2020injecting,jin2021numgpt}. Multilingual reasoning benchmarks such as MGSM report aggregate French performance \citep{shi2022language}, and interpretability work identifies arithmetic-sensitive components \citep{yu2024interpreting,chang2024unraveling}. However, existing evaluations do not isolate French-specific numeral morphology with full coverage and band-level significance tests.
+
+We address this gap with \frcountmap, an inference-only probe suite for French numerals. We evaluate deterministic API outputs on \digitword, \worddigit, and \patterncls tasks over a synthetic 0--199 dataset, then connect those results to \mgsmfr performance. Our quantitative preview is direct: transduction is near-perfect and does not show a significant irregular-band penalty, while \patterncls exhibits large and significant irregular-band advantages under our label design.
+
+In summary, our main contributions are:
+\begin{itemize}
+    \item We introduce a reproducible French numeral probe pipeline with complete 0--199 coverage and transparent normalization/scoring.
+    \item We conduct controlled model-by-condition comparisons showing ceiling-level \worddigit and near-ceiling \digitword performance without a robust irregular-range drop.
+    \item We provide band-wise risk-difference tests with FDR correction and a pooled logistic model that quantifies where band effects do and do not appear.
+    \item We show that prompt reasoning affects broader French math reasoning (\mgsmfr) more than numeral transduction itself.
+\end{itemize}
+
+\para{Paper organization.} \Secref{sec:related_work} discusses prior numeracy and multilingual reasoning research. \Secref{sec:methodology} details data, probes, and metrics. \Secref{sec:results} presents quantitative findings and statistical tests. \Secref{sec:discussion} covers interpretation, limitations, and implications, and \secref{sec:conclusion} concludes.

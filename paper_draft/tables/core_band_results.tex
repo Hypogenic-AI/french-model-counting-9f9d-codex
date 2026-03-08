@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Model & Condition & Task & 0--69 & 70--99 & 100--199 \\
+\midrule
+\gptfourone & Direct & \digitword & 0.9857 & {\bf 1.0000} & {\bf 1.0000} \\
+\gptfourone & Reasoned & \digitword & 0.9857 & {\bf 1.0000} & {\bf 1.0000} \\
+\gptfouronemini & Direct & \digitword & 0.9714 & 0.9667 & {\bf 1.0000} \\
+\midrule
+\gptfourone & Direct & \worddigit & {\bf 1.0000} & {\bf 1.0000} & {\bf 1.0000} \\
+\gptfourone & Reasoned & \worddigit & {\bf 1.0000} & {\bf 1.0000} & {\bf 1.0000} \\
+\gptfouronemini & Direct & \worddigit & {\bf 1.0000} & {\bf 1.0000} & {\bf 1.0000} \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Band-wise transduction accuracy. Best values within each task block are in \textbf{bold}. \gptfouronemini reasoned was incomplete and is excluded.}
+\label{tab:core_band_results}
+\end{table*}
